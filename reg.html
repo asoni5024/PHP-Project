@@ -1,0 +1,215 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #BBDEFB  ;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #80DEEA;
+  color: black;
+}
+
+.active {
+  background-color:#AEEA00;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+  
+
+#f{
+    font-size: 15px;
+    height: 30px;
+    width : 452px;
+}
+	#l {
+    font-size: 15px;
+    height: 30px;
+    width : 452px;
+	}
+	#m {
+    font-size: 15px;
+    height: 30px;
+    width : 452px;
+	}
+	#e {
+    font-size: 15px;
+    height: 30px;
+    width : 452px;
+	}
+	#c {
+    font-size: 15px;
+    height: 30px;
+    width : 452px;
+	}
+	#co {
+    font-size: 15px;
+    height: 30px;
+    width : 452px;
+	}
+	#d {
+    font-size: 15px;
+    height: 30px;
+    width : 452px;
+	}
+	#g{
+    font-size: 15px;
+    height: 30px;
+    width : 452px;
+	}
+#ad1 {
+    font-size: 15px;
+    height: 30px;
+    width : 909px;
+}
+#ad2 {
+    font-size: 15px;
+    height: 30px;
+    width : 909px;
+}
+#z{
+    font-size: 15px;
+    height: 30px;
+    width : 300px;
+}
+#s {
+    font-size: 15px;
+    height: 30px;
+    width : 300px;
+}
+#ci {
+    font-size: 15px;
+    height: 30px;
+    width : 300px;
+}
+#t {
+    font-size: 15px;
+    height: 60px;
+    width : 909px;
+}
+#id {
+    font-size: 15px;
+    height: 30px;
+    width : 100px;
+}
+</style>
+</head>
+<body bgcolor="#E1F5FE">
+<div class="container">
+<div class="topnav" id="myTopnav">
+  <a href="index.php" >Home</a>
+  <a href="reg.html" class="active">Registration</a>
+  <a href="r.php">Student Info</a>
+  <a href="a.php">About</a>
+  </div>
+
+	<form name="form" method="post">
+	<input type="hidden" name="new" value="1" />
+	<h3><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name</label>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label>Last Name</label><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="f" type="text" name="First" placeholder="First Name"/>
+	<input id="l" type="text" name="Last" placeholder="Last Name"/><br><br>
+	
+	<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address</label><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ad1" type="text" name="Address1" placeholder="Address Line 1"/><br><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ad2" type="text" name="Address2" placeholder="Address Line 2"/><br><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="s" type="text" name="State" placeholder="State"/>
+	<input id="ci" type="text" name="City" placeholder="City"/>
+	<input id="z" type="text" name="Zipcode" placeholder="Zipcode"/><br><br>
+	
+	<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone</label>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label>Email</label><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="m" type="text" name="Phone" placeholder="Phone"/>
+	<input id="e" type="Email" name="Email" placeholder="Email"/><br><br>
+	
+	<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender</label>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label>Date Of Birth</label><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="g" name="Gender"/>
+	<option value="" selected>[choose yours]</option>
+	<option value="Male">Male</option>
+    <option  value="Female">Female</option>
+	<option  value="Other">Other</option>
+	</select>
+	<input id="d" type="date" name="DOB" placeholder="DOB"/><br><br>
+	
+	<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category</label>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label>Courses</label><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="c" name="Category"/>
+	<option value="" selected>[choose yours]</option>
+	<option value="SC">SC</option>
+    <option  value="ST">ST</option>
+	<option  value="OBC">OBC</option>
+	<option  value="GEN">GEN</option>
+	</select>
+	<select id="co" name="Course"/>
+	<option value="" selected>[choose yours]</option>
+	<option value="BTECH">BTECH</option>
+    <option  value="MTECH">MTECH</option>
+	<option  value="BCA">BCA</option>
+	<option  value="MCA">MCA</option>
+	<option value="MBA">MBA</option>
+    <option  value="MA">MA</option>
+	<option  value="BCOM">BCOM</option>
+	<option  value="MCOM">MCOM</option>
+	</select><br><br>
+	
+	<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comments & Questions</label><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="t" name="Comment"></textarea><br/><br/>
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input id="id" type="button" value="Submit" onclick="savedata()">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	</h3></form>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="a.js" rel="javascript"></script>
+	</div></body>
+<html>
